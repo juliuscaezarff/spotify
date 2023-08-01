@@ -1,12 +1,20 @@
-interface HeaderProps {}
-export function Header(props: HeaderProps) {
+import Logo from '../assets/spotify-logo.png'
+
+import Image from 'next/image'
+
+
+export function Header() {
   return (
     <header>
       <div className="flex fixed bg-black w-full px-3 md:px-20 py-4">
         <div className="container flex items-center mx-auto">
           <div>
             <a href="#">
-              <img className="w-20 md:w-[125px]" src="" alt="" />
+              <Image
+                className="w-20 md:w-[125px]"
+                src={Logo}
+                alt="Logo Spotify"
+              />
             </a>
           </div>
           <div className="flex justify-end flex-1 md:hidden text-white text-3xl">
