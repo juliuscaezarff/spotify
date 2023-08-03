@@ -1,13 +1,10 @@
-import Logo from '../assets/spotify-logo.png'
-
 import Image from 'next/image'
-
+import Logo from '../assets/spotify-logo.png'
 
 export function Header() {
   return (
-    <header>
-      <div className="flex fixed bg-black w-full px-3 md:px-20 py-4">
-        <div className="container flex items-center mx-auto">
+    <header className="flex bg-black h-[80px] w-full md:px-20 px-10 py-4">
+        <div className=" container flex items-center mx-auto">
           <div>
             <a href="#">
               <Image
@@ -30,7 +27,7 @@ export function Header() {
                 </li>
                 <li className="px-4">
                   <a className="hover:text-hoverspt text-sm" href="">
-                    Ajuda
+                    Suporte
                   </a>
                 </li>
                 <li className="px-4">
@@ -55,7 +52,6 @@ export function Header() {
             </nav>
           </div>
         </div>
-      </div>
     </header>
   )
 }
